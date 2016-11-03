@@ -2,4 +2,3 @@
 
 Print-Step-Header "build: Building library"
 
-certutil -f -p $env:virksomhetssertifikat_pass -importpfx bring.p12
