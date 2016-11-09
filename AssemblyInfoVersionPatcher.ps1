@@ -23,6 +23,9 @@ if (!$hasAssemblyVersion)
 else
 {
 	Write-Host "AssemblyVersion found, lets get this 🎉 started!"
+
+	Write-Host $globalAssemblyFileContent
+
 	$assemblyVersionFormattedCorrectly = $matches[0] -match $assemblyVersionMatchPattern	
 	if (!$assemblyVersionFormattedCorrectly) 
 	{
