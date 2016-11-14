@@ -11,7 +11,7 @@ Print-Step-Header "before_build: Patching version in $assemblyInfoName"
 $globalAssemblyFileContent = Get-Content $assemblyInfoPath
 					
 $versionMatchPattern = '[0-9]+(\.([0-9]+|\*)){1,3}'				
-$assemblyVersionMatchPattern = "(?<major>[0-9]+)\.(?<minor>[0-9])+(\.(?<build>([0-9])))?(\.(?<revision>([0-9])))?"
+$assemblyVersionMatchPattern = "(?<major>[0-9]+)\.(?<minor>[0-9]+)+(\.(?<build>([0-9]+)))?(\.(?<revision>([0-9])))?"
 
 $hasAssemblyVersionMatchPattern = "AssemblyVersion\(`"$versionMatchPattern`"\)"
 
